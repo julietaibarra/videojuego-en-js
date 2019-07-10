@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="Julieta Ibarra">
+    <!--meta name="keywords" content=" HTML, CSS, curso de html  , curso de css, curso de diseño de
+    páginas web"-->
+    <meta name="robots" content="index, follow">
+    <meta name="googlerobot" content="index, follow">
+    <title>Juego</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="icon" type="image/x-ico" href="img/favicon.ico">
+
+
+  </head>
+  <script>
+  var actual=0;
+  function puntos(n){
+    var ptn=document.getElementsByClassName("punto");
+    for (var i = 0; i < ptn.length; i++) {
+      if(ptn[i].className.includes("activo")){
+        ptn[i].className= ptn[i].className.replace("activo","");
+        break;
+
+      }
+    }
+    ptn[n].className += " activo";
+  }
+  function mostrar(n){
+    var imagenes=document.getElementsByClassName("imagen");
+    for (var i = 0; i < imagenes.length; i++) {
+      if (imagenes[i].className.includes("actual")) {
+        imagenes[i].className = imagenes[i].className.replace("actual","");
+        break;
+      }
+    }
+    actual = n;
+    imagenes[n].className += " actual";
+    puntos(n);
+
+  }
+  function siguiente(){
+    actual++;
+    if(actual>5){
+      actual=0;
+    }
+    mostrar(actual);
+  }
+  function anterior(){
+    actual--;
+    if(actual<0){
+      actual=5;
+    }
+    mostrar(actual);
+
+  }
+  var velocidad = 2000;
+  var play=setInterval("siguiente()", velocidad);
+
+  function playpause(){
+    var boton=document.getElementById("btn");
+    if(play==null){
+      boton.src="img/pause0.png";
+      play=setInterval("siguiente()", velocidad);
+    }
+    else {
+      clearInterval(play);
+      play=null;
+      boton.src="img/play0.png";
+    }
+  }
+
+  </script>
+  <body>
+    <div class="" id="redes">
+      <a href="#"><img src="img/facebook.png" alt="Facebook"> </a>
+      <a href="#"><img src="img/twitter.png" alt="Twitter"> </a>
+
+    </div>
+    <div class="" id="contenedor">
+      <div class="" id="cabecera">
+        <div class="" id="logo">
+          Saltarín
+        </div>
+        <div class="" id="menu">
+          <ul>
+            <li><a href="index.html" id="activo"> Home</a> </li>
+            <li><a href="galeria.html"> Galeria</a> </li>
+            <li><a href="contactos.html"> Contactos</a> </li>
+          </ul>
+        </div>
+        <div class="" id="mensaje">
+          <h2> Galeria </h2>
+          <p>Me llamo Julieta Ibarra, este es mi primer proyectó personal. Es un juego muy básico de un pequeño perro que tiene que esquivar obstáculos. La idea del personaje fue inspirada por mi mascota samy, una perrita cruza de caniche.
+          </p>
+          <!--a href="principal" id="silencio"> Leer más </a-->
+        </div>
+      </div>
+      <div class="contenedor-img" id="">
+        <div class="imagen actual">
+        <img src="img/doggy.jpg"/>
+          <div class="texto">imagen 1</div>
+        </div>
+
+        <div class="imagen">
+        <img src="img/IMG_.jpg"/>
+          <div class="texto">imagen 2</div>
+        </div>
+
+        <div class="imagen">
+        <img src="img/IMG_9280.png"/>
+          <div class="texto">imagen 3</div>
+        </div>
+
+        <div class="imagen">
+        <img src="img/IMG_9281.jpg"/>
+          <div class="texto">imagen 4</div>
+        </div>
+
+        <div class="imagen">
+        <img src="img/IMG_9282.jpg"/>
+          <div class="texto">imagen 5</div>
+        </div>
+        <div class="imagen">
+        <img src="img/doggy3.jpg"/>
+          <div class="texto">imagen 6</div>
+        </div>
+
+
+
+
+      <div class="puntos">
+        <span class="punto activo" onclick="mostrar(0);"></span>
+        <span class="punto" onclick="mostrar(1);"></span>
+        <span class="punto" onclick="mostrar(2);"></span>
+        <span class="punto" onclick="mostrar(3);"></span>
+        <span class="punto" onclick="mostrar(4);"></span>
+        <span class="punto" onclick="mostrar(5);"></span>
+      </div>
+
+      <div class="boton">
+
+        <a href="#">
+          <img src="img/pause0.png" alt="" id="btn" onclick="playpause();">
+        </a>
+
+        <a href="#" class="anterior" onclick="anterior();"> &#10094; </a>
+        <a href="#" class="siguiente" onclick="siguiente();"> &#10095; </a>
+      </div>
+      </div>
+
+    </div>
+    <div class="" id="footer">
+      <p>Copyright (c) 2019 Julieta Ibarra All Rights Reserved.</p>
+      <a href="#contenedor"><img src="img/arriba.png" alt="Volver arriba"> </a>
+    </div>
+  </body>
+</html>
