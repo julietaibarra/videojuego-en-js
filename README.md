@@ -8,7 +8,7 @@ Para la parte del diseño hice un dibujo de samy en papel y luego lo pase a digi
 El juego consta de 4 niveles el los cuales se accede al siguiente después de los 20 puntos para el 2do nivel 40 puntos para el 3ero y 60 puntos para el 4 to. En cada nivel la velocidad va incrementando un poco. El juego también tiene sonido( Super mario bros, El salto de mario) aunque no pude hacer que el sonido se “pause” o bajar  su intensidad. 
 ![](https://raw.githubusercontent.com/julietaibarra/videojuego-en-js/master/img/img2.png)
 
-Para la creación del diseño web de la galería cree un slideshow carrusel en js que va cambiando las imágenes en un intervalo de 2 segundos. Este se puede pausar y reproducir con su respectivos botones, también se puede pasar a la siguiente imagen con las flechas agregadas o con las puntos debajo de las imágenes.
+Para la creación del diseño web de la galería cree un slideshow  en js que va cambiando las imágenes en un intervalo de 2 segundos. Este se puede pausar y reproducir con su respectivos botones, también se puede pasar a la siguiente imagen con las flechas agregadas o con las puntos debajo de las imágenes.
 
 ![](https://raw.githubusercontent.com/julietaibarra/videojuego-en-js/master/img/img3.png)
 
