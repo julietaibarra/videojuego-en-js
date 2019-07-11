@@ -16,4 +16,4 @@ En la zona de contactos se creó un formulario básico de datos. Estos no son re
 
 ![](https://raw.githubusercontent.com/julietaibarra/videojuego-en-js/master/img/img4.png)
 Para poder ejecutar correctamente el proyecto es necesario descargar todos los archivos con sus respectivas carpeta(excepto img1, img2, img3 y img4, eso archivos no son necesarios para el funcionamiento del juego ni para la página). Los archivos HTML son tres: index, galería y contactos. Y los otros archivos son una carpeta con las imágenes utilizadas y otra con los estilos css, un archivo de mp3 (para el sonido del juego) y finalmente el juego.js.
-Espero que les guste, para ser un juego muy básico y tiene muchas cosas para cambiar, me sirvió mucho para aprender y además es algo muy personal al contar con mi perrita como protagonista.
+Espero que les guste, para ser un juego muy básico y tiene muchas cosas para cambiar pero me sirvió mucho para aprender y además es algo muy personal.
