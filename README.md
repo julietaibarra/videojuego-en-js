@@ -1,4 +1,4 @@
-# videojuego-en-js
+# videojuego en js
 ## Presentación
 Este es mi primer proyecto, es un juego muy básico de perrito que debe esquivar obstáculos. 
 Para la creación de este proyecto, primero diseñe al personaje principal, Samy, que va saltar los obstáculos predeterminados. La lógica que use para programar crear los objetos que van a interactuar en el juego, cree el canvas donde se va realizar y luego las funciones que van a realizar las funciones lógicas de cada objeto. 
