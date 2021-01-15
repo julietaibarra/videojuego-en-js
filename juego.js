@@ -1,12 +1,12 @@
 //function audio(){
-var sonido1, sonido2, reproducir;
-reproducir=false;
+// var sonido1, sonido2, reproducir;
+// reproducir=false;
 
-sonido1=new Audio();
-sonido1.src='salto.mp3';
+// sonido1=new Audio();
+// sonido1.src='salto.mp3';
 
-sonido2=new Audio();
-sonido2.src='gameOver.mp3';
+// sonido2=new Audio();
+// sonido2.src='gameOver.mp3';
 //}
 //evento
 ///////////////////////////////////////////////////////////
@@ -15,7 +15,7 @@ document.addEventListener('keydown', function(evento){
 
       if(nivel.muerto==false){
             saltar();//ejecuta el movimiento de salto del personaje
-            sonido1.play();
+//             sonido1.play();
           }
           else {
             //vuelve a empezar la partida
@@ -33,7 +33,7 @@ document.addEventListener('keydown', function(evento){
 
 ///declaracion de las imagenes
 ///////////////////////////////////////////////////////////
-var imgDoggy, imgObstaculo, imgFondo, imgSuelo, imgFondo;
+var imgDoggy, imgObstaculo, imgFondo, imgFondo;
 
 function cargarImagenes(){
   imgDoggy=  new Image();
@@ -45,8 +45,6 @@ function cargarImagenes(){
   imgFondo=new Image();
   imgFondo.src ='img/imgFondo.png';
 
-  imgSuelo= new Image();
-  imgSuelo.src='img/imgSuelo.png';
 
   imgFondo=new Image();
   imgFondo.src='img/imgFondo.png';
