@@ -87,7 +87,7 @@ function dibujarFondo(){
 }
 
 function dibujarDoggy(){
-  ctx.drawImage(imgDoggy,0,0,3550,2950,100,doggy.y,80,60);
+  ctx.drawImage(imgDoggy,0,0,80,72,100,doggy.y,80,60);
 
 }
 
